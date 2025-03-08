@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Live Weather App 🌤️</h2>
+        
+        <div class="search-box">
+            <input type="text" id="cityInput" placeholder="Enter City Name">
+            <button onclick="getWeather()">Search</button>
+        </div>
+
+        <div class="weather-info">
+            <h3 id="cityName">--</h3>&#127961;
+            <h2 id="temperature">--°C</h2>
+            <p id="condition">Loading...</p>
+            <p id="searchTime">Searched at: --</p>
+
+
+            <div class="details">
+                <p><b>Air Quality:&#127788;</b> <span id="airQuality">--</span></p>
+                <p><b>Wind Speed:&#127786;</b> <span id="windSpeed">-- km/h</span></p>
+                <p><b>Humidity:&#127779;</b> <span id="humidity">--%</span></p>
+                <p><b>Pressure:&#127777;</b> <span id="pressure">-- hPa</span></p>
+                <p><b>Sunrise:&#127774;</b> <span id="sunrise">--</span></p>
+                <p><b>Sunset:&#127764;</b> <span id="sunset">--</span></p>
+            </div>
+        </div>
+
+        <canvas id="weatherChart"></canvas>
+
+        <div class="moon-phase">
+            🌙 Moon Phase: <span id="moonPhase"></span>
+        </div>
+    </div>
+
+    <script src="script1.js"></script>
+
+</body>
+</html>
